@@ -1,12 +1,11 @@
 require "paperclip"
 require "paperclip/railtie"
-require "paperclip-video-duration"
+# require "paperclip-video-duration"
 require "active_record"
 require "byebug"
 
 # Connect to sqlite
 ActiveRecord::Base.establish_connection(adapter: :sqlite3, database: ":memory:")
-# ActiveRecord::Base.logger = Logger.new(STDOUT)
 load(File.join(File.dirname(__FILE__), 'schema.rb'))
 
 Paperclip::Railtie.insert

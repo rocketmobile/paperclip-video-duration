@@ -4,5 +4,6 @@ ActiveRecord::Schema.define version: 0 do
     t.string  :asset_content_type
     t.integer :asset_updated_at
     t.integer :asset_file_size
+    # t.float   :asset_file_duration
   end
 end
